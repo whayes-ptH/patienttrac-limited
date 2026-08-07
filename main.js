@@ -18,3 +18,20 @@
     });
   }
 })();
+
+// Contact form – display a confirmation message on submit
+(function () {
+  var form = document.querySelector('.contact-form');
+  if (!form) { return; }
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    var confirmation = document.createElement('p');
+    confirmation.className = 'form-confirmation';
+    confirmation.textContent = 'Thank you for your message. A member of our team will be in touch shortly.';
+
+    form.innerHTML = '';
+    form.appendChild(confirmation);
+  });
+})();
