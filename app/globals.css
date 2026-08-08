@@ -200,6 +200,189 @@ h1, h2, h3 { font-family: var(--font-display), sans-serif; }
 .principle-grid h3 { margin: 42px 0 12px; color: var(--navy); font-size: 1.45rem; }
 .principle-grid p { margin: 0; color: var(--muted); line-height: 1.7; }
 
+.services {
+  position: relative;
+  overflow: hidden;
+  background: var(--navy-deep);
+  color: var(--white);
+}
+.services::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: .24;
+  background:
+    radial-gradient(circle at 82% 12%, rgba(11,90,145,.66), transparent 32%),
+    linear-gradient(135deg, transparent 55%, rgba(238,124,37,.08));
+}
+.services-intro {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(300px, 1.2fr) minmax(280px, .8fr);
+  gap: 42px 8vw;
+  align-items: end;
+}
+.section-heading.inverse h2 { color: var(--white); }
+.services-intro > p {
+  max-width: 590px;
+  margin: 0 0 8px;
+  color: #adc0d2;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+.service-grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  margin-top: 72px;
+  background: rgba(255,255,255,.14);
+  border: 1px solid rgba(255,255,255,.14);
+}
+.service-card {
+  min-height: 330px;
+  padding: clamp(28px, 4vw, 48px);
+  display: flex;
+  flex-direction: column;
+  background: rgba(7, 33, 59, .9);
+  transition: background .25s ease;
+}
+.service-card:hover { background: rgba(11, 51, 84, .98); }
+.service-topline { display: flex; justify-content: space-between; color: var(--orange-bright); font-size: .72rem; font-weight: 800; }
+.service-card h3 { margin: 58px 0 16px; font-size: clamp(1.65rem, 2.6vw, 2.35rem); letter-spacing: -.035em; }
+.service-card > p { max-width: 570px; margin: 0; color: #b9c8d6; line-height: 1.75; }
+.service-card small { margin-top: auto; padding-top: 30px; color: #7690a7; font-size: .7rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+
+.approach {
+  display: grid;
+  grid-template-columns: minmax(280px, .8fr) minmax(360px, 1.2fr);
+  gap: 48px 10vw;
+  background: var(--white);
+}
+.approach h2 {
+  max-width: 500px;
+  margin: 0;
+  color: var(--navy);
+  font-size: clamp(2.4rem, 4.5vw, 4.4rem);
+  line-height: 1.08;
+  letter-spacing: -.05em;
+}
+.approach-steps { border-top: 1px solid var(--line); }
+.approach-steps article {
+  min-height: 150px;
+  padding: 28px 0;
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  gap: 20px;
+  border-bottom: 1px solid var(--line);
+}
+.approach-steps span { padding-top: 7px; color: var(--orange); font-size: .7rem; font-weight: 800; }
+.approach-steps h3 { margin: 0 0 9px; color: var(--navy); font-size: 1.35rem; }
+.approach-steps p { max-width: 560px; margin: 0; color: var(--muted); line-height: 1.7; }
+
+.contact-section {
+  padding: clamp(74px, 9vw, 118px) clamp(24px, 7vw, 100px);
+  display: grid;
+  grid-template-columns: minmax(300px, 1.15fr) minmax(280px, .85fr);
+  gap: 56px 10vw;
+  color: var(--white);
+  background:
+    linear-gradient(90deg, rgba(4,25,47,.98), rgba(4,25,47,.88)),
+    url('/london-financial-skyline.jpg') center 65% / cover;
+}
+.contact-main h2 {
+  max-width: 700px;
+  margin: 0;
+  font-size: clamp(2.8rem, 5.8vw, 5.6rem);
+  line-height: 1;
+  letter-spacing: -.055em;
+}
+.contact-main > p:not(.eyebrow) { max-width: 630px; margin: 28px 0 34px; color: #b5c6d4; font-size: 1.05rem; line-height: 1.75; }
+.contact-details { align-self: end; font-style: normal; border-top: 1px solid rgba(255,255,255,.2); }
+.contact-details div { padding: 23px 0; display: grid; grid-template-columns: 120px 1fr; gap: 18px; border-bottom: 1px solid rgba(255,255,255,.16); }
+.contact-details span { color: #8198ad; font-size: .65rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
+.contact-details p, .contact-details a { margin: 0; color: var(--white); font-size: .94rem; line-height: 1.6; }
+.contact-details a:hover, .contact-details a:focus-visible { color: var(--orange-bright); }
+
+.site-footer {
+  min-height: 120px;
+  padding: 24px clamp(24px, 7vw, 100px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  background: #031423;
+  color: #8ea2b5;
+  border-top: 1px solid rgba(255,255,255,.09);
+}
+.footer-brand { display: flex; align-items: center; gap: 14px; }
+.footer-brand img { width: 40px; height: 43px; object-fit: cover; }
+.footer-brand strong { color: var(--white); font-family: var(--font-display), sans-serif; font-size: 1rem; }
+.footer-brand p { margin: 3px 0 0; font-size: .72rem; }
+.footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px 24px; }
+.footer-links a { color: #b4c3d1; font-size: .72rem; font-weight: 700; }
+.footer-links a:hover, .footer-links a:focus-visible { color: var(--orange-bright); }
+.footer-meta { text-align: right; }
+.footer-meta p { margin: 5px 0; font-size: .68rem; letter-spacing: .04em; }
+
+.legal-page { background: var(--paper); }
+.legal-hero {
+  padding: clamp(76px, 9vw, 126px) clamp(24px, 7vw, 100px);
+  color: var(--white);
+  background:
+    linear-gradient(105deg, rgba(4,25,47,.98), rgba(8,41,74,.82)),
+    url('/london-financial-skyline.jpg') center 46% / cover;
+}
+.legal-hero h1 {
+  max-width: 880px;
+  margin: 0;
+  font-size: clamp(3.4rem, 7vw, 7.2rem);
+  line-height: .98;
+  letter-spacing: -.06em;
+}
+.legal-hero > p:not(.eyebrow) { max-width: 720px; margin: 28px 0 26px; color: #c0ceda; font-size: 1.1rem; line-height: 1.75; }
+.legal-hero > span { color: #91a7b9; font-size: .7rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
+.legal-layout {
+  width: min(1180px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: clamp(64px, 8vw, 112px) 0;
+  display: grid;
+  grid-template-columns: 270px minmax(0, 1fr);
+  gap: clamp(44px, 8vw, 100px);
+  align-items: start;
+}
+.legal-aside {
+  position: sticky;
+  top: 112px;
+  padding: 28px;
+  display: grid;
+  gap: 14px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--orange);
+}
+.legal-aside .eyebrow { margin-bottom: 4px; }
+.legal-aside strong { color: var(--navy); font-family: var(--font-display), sans-serif; font-size: 1.15rem; }
+.legal-aside address { color: var(--muted); font-size: .84rem; font-style: normal; line-height: 1.75; }
+.legal-aside a { color: var(--blue); font-size: .78rem; font-weight: 700; word-break: break-word; }
+.legal-aside small { padding-top: 14px; color: var(--muted); border-top: 1px solid var(--line); font-size: .66rem; font-weight: 800; letter-spacing: .05em; }
+.legal-content { min-width: 0; }
+.legal-content section { padding: 0 0 38px; margin: 0 0 38px; border-bottom: 1px solid var(--line); }
+.legal-content section:last-child { margin-bottom: 0; }
+.legal-content h2 { margin: 0 0 18px; color: var(--navy); font-size: clamp(1.5rem, 2.4vw, 2rem); letter-spacing: -.035em; }
+.legal-content p, .legal-content li { color: #536779; font-size: .98rem; line-height: 1.82; }
+.legal-content p { margin: 0 0 16px; }
+.legal-content ul { margin: 0 0 16px; padding-left: 22px; }
+.legal-content li { padding-left: 7px; margin: 7px 0; }
+.legal-content a { color: var(--blue); font-weight: 700; text-decoration: underline; text-decoration-color: rgba(11,90,145,.3); text-underline-offset: 3px; }
+.legal-content strong { color: var(--ink); }
+.legal-table-wrap { margin: 22px 0; overflow-x: auto; border: 1px solid var(--line); }
+.legal-content table { width: 100%; min-width: 620px; border-collapse: collapse; background: var(--white); }
+.legal-content th, .legal-content td { padding: 17px 20px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--line); color: #536779; font-size: .84rem; line-height: 1.6; }
+.legal-content th { color: var(--navy); background: #edf2f7; font-size: .68rem; letter-spacing: .1em; text-transform: uppercase; }
+.legal-content tr:last-child td { border-bottom: 0; }
+
 @media (max-width: 900px) {
   .desktop-nav { display: none; }
   .mobile-nav { display: block; }
@@ -212,6 +395,12 @@ h1, h2, h3 { font-family: var(--font-display), sans-serif; }
   .hero-facts div { flex: 1; min-width: 0; }
   .about { grid-template-columns: 1fr; }
   .principle-grid { grid-template-columns: 1fr; }
+  .services-intro, .approach, .contact-section { grid-template-columns: 1fr; }
+  .service-grid { grid-template-columns: 1fr; }
+  .contact-details { margin-top: 12px; }
+  .legal-layout { grid-template-columns: 1fr; }
+  .legal-aside { position: static; }
+  .legal-footer { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 620px) {
@@ -230,6 +419,15 @@ h1, h2, h3 { font-family: var(--font-display), sans-serif; }
   .market-ribbon div { justify-content: flex-start; gap: 18px 26px; margin-top: 18px; }
   .section { padding: 72px 22px; }
   .principle-grid article { min-height: 220px; }
+  .service-grid { margin-top: 48px; }
+  .service-card { min-height: 300px; }
+  .approach-steps article { grid-template-columns: 42px 1fr; }
+  .contact-details div { grid-template-columns: 1fr; gap: 8px; }
+  .site-footer { display: grid; }
+  .footer-links { justify-content: flex-start; }
+  .footer-meta { text-align: left; }
+  .legal-layout { width: min(100% - 36px, 1180px); }
+  .legal-hero { padding-left: 22px; padding-right: 22px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

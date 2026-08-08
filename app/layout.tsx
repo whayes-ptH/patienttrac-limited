@@ -31,6 +31,11 @@ export const metadata: Metadata = {
     url: "https://patienttracltd.com",
     images: ["/london-financial-skyline.jpg"],
   },
+  icons: {
+    icon: "/patienttrac-limited-logo.png",
+    shortcut: "/patienttrac-limited-logo.png",
+    apple: "/patienttrac-limited-logo.png",
+  },
   other: {
     "codex-preview": "development",
   },
