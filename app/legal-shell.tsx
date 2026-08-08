@@ -29,17 +29,17 @@ export default function LegalShell({ eyebrow, title, summary, children }: LegalS
         </a>
         <nav className="desktop-nav" aria-label="Legal navigation">
           <a href="/">Home</a>
-          <a href="/privacy">Privacy</a>
-          <a href="/terms">Terms</a>
-          <a className="nav-cta" href="mailto:legal@patienttracltd.com">Contact</a>
+          <a href="/privacy">Privacy Policy</a>
+          <a href="/terms">Terms of Service</a>
+          <a href="/#contact">Contact</a>
         </nav>
         <details className="mobile-nav">
           <summary aria-label="Open navigation">Menu</summary>
           <nav aria-label="Mobile legal navigation">
             <a href="/">Home</a>
-            <a href="/privacy">Privacy</a>
-            <a href="/terms">Terms</a>
-            <a href="mailto:legal@patienttracltd.com">Contact</a>
+            <a href="/privacy">Privacy Policy</a>
+            <a href="/terms">Terms of Service</a>
+            <a href="/#contact">Contact</a>
           </nav>
         </details>
       </header>

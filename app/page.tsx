@@ -53,18 +53,18 @@ export default function Home() {
           </span>
         </a>
         <nav className="desktop-nav" aria-label="Primary navigation">
-          <a href="#about">About</a>
-          <a href="#services">Services</a>
-          <a href="#markets">Markets</a>
-          <a className="nav-cta" href="#contact">Contact</a>
+          <a href="/">Home</a>
+          <a href="/privacy">Privacy Policy</a>
+          <a href="/terms">Terms of Service</a>
+          <a href="/#contact">Contact</a>
         </nav>
         <details className="mobile-nav">
           <summary aria-label="Open navigation">Menu</summary>
           <nav aria-label="Mobile navigation">
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#markets">Markets</a>
-            <a href="#contact">Contact</a>
+            <a href="/">Home</a>
+            <a href="/privacy">Privacy Policy</a>
+            <a href="/terms">Terms of Service</a>
+            <a href="/#contact">Contact</a>
           </nav>
         </details>
       </header>
