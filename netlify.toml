@@ -1,9 +1,10 @@
 [build]
   command = "npx next build"
-  publish = ".next"
+  publish = "out"
 
 [build.environment]
   NODE_VERSION = "22.13.0"
+  PATIENTTRAC_NETLIFY_STATIC_EXPORT = "true"
 
 [[headers]]
   for = "/*"
