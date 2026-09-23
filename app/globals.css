@@ -27,9 +27,9 @@ p { line-height: 1.7; }
 .brand { display: flex; align-items: center; min-width: 250px; }
 .brand img { width: 265px; height: auto; display: block; }
 .desktop-nav { display: flex; align-items: center; gap: clamp(18px,2.3vw,34px); }
-.desktop-nav a { color: #e8edf4; font-size: .77rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
-.desktop-nav a:hover,.desktop-nav a:focus-visible { color: var(--gold-bright); }
-.desktop-nav .nav-cta { padding: 12px 18px; border: 1px solid rgba(215,173,85,.55); color: var(--gold-bright); }
+.desktop-nav a { color: var(--gold-bright); font-size: .77rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+.desktop-nav a:hover,.desktop-nav a:focus-visible { color: var(--gold-pale); text-shadow: 0 0 14px rgba(242,200,111,.30); }
+.desktop-nav .nav-cta { padding: 12px 18px; border: 1px solid rgba(242,200,111,.70); color: var(--gold-bright); }
 .mobile-nav { display:none; position:relative; }
 
 .hero { position: relative; min-height: 820px; padding: clamp(78px,8vw,118px) clamp(24px,6.8vw,100px) 70px; display: grid; grid-template-columns: minmax(0,1.05fr) minmax(360px,.75fr); align-items: center; gap: 7vw; overflow: hidden; color: var(--white); background: var(--navy); }
@@ -195,7 +195,7 @@ p { line-height: 1.7; }
   .mobile-nav summary { cursor:pointer; list-style:none; padding:10px 14px; color:var(--gold-pale); border:1px solid rgba(215,173,85,.32); font-size:.74rem; font-weight:800; letter-spacing:.08em; text-transform:uppercase; }
   .mobile-nav summary::-webkit-details-marker { display:none; }
   .mobile-nav nav { position:absolute; right:0; top:50px; width:220px; padding:8px; display:grid; background:#07111f; border:1px solid rgba(215,173,85,.25); box-shadow:0 18px 50px rgba(0,0,0,.35); }
-  .mobile-nav nav a { padding:12px; color:#e8d7b1; font-size:.8rem; font-weight:700; }
+  .mobile-nav nav a { padding:12px; color:var(--gold-bright); font-size:.8rem; font-weight:700; }
   .foundation-grid,.section-heading,.capital-grid,.markets-grid,.brochure-showcase,.contact-section { grid-template-columns:1fr; }
   .contact-art { max-width:520px; }
   .capital-copy.border-left { border-left:0; border-top:1px solid #e6dfd1; }
